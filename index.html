@@ -52,17 +52,71 @@
             width: 100%;
             height: 100%;
         }
+
+        /* effect 2 */
+
+        .front1, .back1
+        {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            backface-visibility: hidden;
+            transition: all 0.5s ease-in-out;
+        }
+
+        .front1
+        {
+            transform: rotateX(0deg);
+        }
+
+        .back1
+        {
+            transform: rotateY(180deg);
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+        }
+
+        .element:hover .front1
+        {
+            transform: rotateX(180deg);
+        }
+
+        .element:hover .back1
+        {
+            transform: rotateY(0deg);
+        }
+
+        .element .front1 img
+        {
+            width: 100%;
+            height: 100%;
+        }
         </style>
     </head>
     <body>
 
         <div class="element">
             <div class="front">
-                <img src="images/1.jpg" alt="Image 1">
+                <img src="images/11.jpg" alt="Image 1">
             </div>
             <div class="back">
                 <div class="back-content">
-                    <h2>Wonderful Graphics</h2>
+                    <h2>Wonderful Graphics 1</h2>
+                    <p>This is a wonderful project</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="element">
+            <div class="front1">
+                <img src="images/1.jpg" alt="Image 1">
+            </div>
+            <div class="back1">
+                <div class="back-content">
+                    <h2>Wonderful Graphics 2</h2>
                     <p>This is a wonderful project</p>
                 </div>
             </div>
