@@ -152,7 +152,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease;
 }
 
 .front4
@@ -185,4 +185,36 @@
 .effect4:hover .front4
 {
     transform: rotateY(90deg);
+}
+
+/* effect 5 styles */
+
+.front5, .back5
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: all 0.5s ease-in-out;
+}
+
+.front5 img
+{
+    width: 100%;
+    height: 100%;
+}
+
+.back5
+{
+    background-color: #9b59b6;
+    color: #fff;
+    text-align: center;
+    transform: rotateX(-90deg);
+    transform-origin: top;
+}
+
+.effect5:hover .back5
+{
+    transform: rotateX(0);
 }
