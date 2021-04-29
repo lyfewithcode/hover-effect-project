@@ -235,11 +235,12 @@
 {
     width: 100%;
     height: 100%;
+    transition: all 0.5s ease-in-out;
 }
 
 .back6
 {
-    background-color: #e67e22;
+    background-color: rgba(44, 62, 80, 0.8);
     color: #fff;
     text-align: center;
     transform: scale(0);
@@ -251,11 +252,13 @@
     content: '';
     width: 220%;
     height: 70%;
-    background-color: rgba(0, 0, 0, 0.3);
+    //background-color: rgba(0, 0, 0, 0.3);
+    background-color: rgba(44, 62, 80, 0.8);
     top: -40%;
     right: -140%;
     transform: rotate(40deg);
     transition: all 0.5s ease;
+    z-index: 2;
 }
 
 .effect6
@@ -267,4 +270,14 @@
 {
     top: 120%;
     right: 120%;   
+}
+
+.effect6:hover .back6
+{
+    transform: scale(1);
+}
+
+.effect6:hover .front6 img
+{
+    transform: scale(1.3)rotate(10deg);
 }
